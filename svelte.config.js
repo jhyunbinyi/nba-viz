@@ -23,4 +23,4 @@ const config = {
 };
 
 export default config;
-//hello jared
+//hello
