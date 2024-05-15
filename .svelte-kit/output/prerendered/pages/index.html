@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/2.CzCWjM_Z.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CTuyMjOT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.D3dwb_CO.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BI2lel3M.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.DBEyUX1_.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CxUkeWJE.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.CNKR2e5F.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div class="app"><div class="container svelte-187na7m"><h1 class="title svelte-187na7m" data-svelte-h="svelte-wn6oyy">NBA Salary vs. Team Performance</h1> <div class="controls svelte-187na7m"><label for="conference-select" class="svelte-187na7m" data-svelte-h="svelte-i7tsn1">Conference:</label> <select id="conference-select" class="svelte-187na7m"><option value="All" data-svelte-h="svelte-ewmsv0">All</option><option value="East" data-svelte-h="svelte-wp1mra">East</option><option value="West" data-svelte-h="svelte-1cyjm36">West</option></select> <label for="max-wins-slider" class="svelte-187na7m" data-svelte-h="svelte-vxk8mp">Wins:</label> <input type="range" id="max-wins-slider" min="0" max="82" class="svelte-187na7m" value="82"> <label for="year-select" class="svelte-187na7m" data-svelte-h="svelte-c2j2pn">Year:</label> <select id="year-select" class="svelte-187na7m"><option value="2022-23" data-svelte-h="svelte-1uxqdim">2022-23</option><option value="2021-22" data-svelte-h="svelte-1shd0em">2021-22</option></select></div> <div id="scatter-tooltip-container" class="svelte-187na7m" data-svelte-h="svelte-d443rf"><div id="scatter" class="svelte-187na7m"></div> <div id="tooltip" class="tooltip svelte-187na7m"></div></div> </div></div> 
+			
+			<script>
+				{
+					__sveltekit_1i8u0er = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/nba-vis"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.CTuyMjOT.js"),
+						import("./_app/immutable/entry/app.BI2lel3M.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
