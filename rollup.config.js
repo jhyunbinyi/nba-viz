@@ -31,8 +31,8 @@ export default {
       browser: true,
       dedupe: ['svelte']
     }),
-    commonjs(),  // Convert CommonJS modules to ES6
-    svg(),       // Handle SVG files
+    commonjs(),  
+    svg(),     
     // In production mode, minify the bundle
     production && terser(),
     // In development mode, serve the app and enable live reload

@@ -17,9 +17,10 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: dev ? '': ProcessingInstruction.env.BASE_PATH,
+			base: dev ? '' : process.env.BASE_PATH || '/nba-vis',
 		}
 	}
 };
 
 export default config;
+//hello jared
